@@ -1,12 +1,14 @@
 import express from "express";
 import React from "react";
 import { renderToString } from "react-dom/server";
+import morgan from "morgan";
 import App from "../shared/App";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
+app.use(morgan("tiny"));
 
 app.get("*", (req, res) => {
   res.send(`
