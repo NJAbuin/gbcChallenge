@@ -1,8 +1,59 @@
 .grid-container {
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 2rem;
+  grid-template-areas:
+    "header header header header"
+    "topAds topAds topAds topAds"
+    "articles articles articles sideAds"
+    "footer footer footer footer";
+  overflow: hidden;
 }
 
-div {
+.header {
   background-color: brown;
+  grid-area: header;
+}
+
+.logo {
+  display: block;
+  max-width: 240px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topAds {
+  grid-area: topAds;
+  height: 8.5rem;
+}
+
+.topAdGrayBox {
+  background-color: #f3f3f3;
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+}
+
+.topAdBox {
+  background-color: #a0dbe9;
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+}
+
+.sideAds {
+  background-color: cadetblue;
+  grid-area: sideAds;
+}
+
+.articles {
+  background-color: chocolate;
+  grid-area: articles;
+}
+
+.footer {
+  background-color: cornflowerblue;
+  grid-area: footer;
 }
