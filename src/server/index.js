@@ -21,6 +21,7 @@ app.get("*", (req, res) => {
         <head>
           <title>Universal Reacl</title>
           <link rel="stylesheet" href="/css/main.css">
+          <script>window.__ARTICLES__=${JSON.stringify(articles)}</script>
           <script src="/bundle.js" defer></script>
         </head>
   
