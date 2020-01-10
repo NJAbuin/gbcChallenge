@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1.4rem;
   grid-template-areas:
     "header header header header"
     "topAds topAds topAds topAds"
@@ -46,11 +46,13 @@
 .sideAds {
   background-color: cadetblue;
   grid-area: sideAds;
+  margin-right: 20%;
 }
 
 .articles {
   background-color: chocolate;
   grid-area: articles;
+  margin-left: 20%;
 }
 
 .footer {

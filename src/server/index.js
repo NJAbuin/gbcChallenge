@@ -1,6 +1,7 @@
 import express from "express";
 import React from "react";
 import { renderToString } from "react-dom/server";
+import axios from "axios";
 import morgan from "morgan";
 import App from "../shared/App";
 
@@ -10,7 +11,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("public"));
 app.use(morgan("tiny"));
 
-app.get("*", (req, res) => {
+app.get("*", async (req, res) => {
+  const response = await axios.get(
+    "https://api-test-ln.herokuapp.com/articles"
+  );
+  const articles = response.data;
+
   res.send(`
       <!DOCTYPE html>
       <head>
@@ -20,7 +26,7 @@ app.get("*", (req, res) => {
       </head>
 
       <body>
-        <div id="root">${renderToString(<App />)}</div>
+        <div id="root">${renderToString(<App articles={articles} />)}</div>
       </body>
     </html>
   `);
