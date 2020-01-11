@@ -1,3 +1,7 @@
+h3 {
+  display: block;
+}
+
 .grid-container {
   display: grid;
   grid-row-gap: 1.4rem;
@@ -12,6 +16,12 @@
 .header {
   background-color: brown;
   grid-area: header;
+}
+
+.suscribeBtn {
+  background-color: yellow;
+  font-weight: bold;
+  align-self: left;
 }
 
 .logo {

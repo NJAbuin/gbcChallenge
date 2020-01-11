@@ -1,10 +1,13 @@
 import React from "react";
 
-export default function SingleArticle({ img }) {
+export default function SingleArticle({ img, key, headline, subtitle }) {
   return (
     <div className="article">
       <img className="articleImg" src={img} alt="img" />
-      Articulo
+
+      <p>
+        {headline} {subtitle}
+      </p>
     </div>
   );
 }

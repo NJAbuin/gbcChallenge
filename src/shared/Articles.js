@@ -3,19 +3,25 @@ import SingleArticle from "./SingleArticle";
 
 export default function Articles({ articles }) {
   return (
-    <div className="articles">
+    <div>
       <h3>Acumulado Grilla</h3>
-
-      {articles.map(article => {
-        if (article.subtype == 7) {
-          return (
-            <SingleArticle
-              key={article.id}
-              img={article.promo_items.basic.url}
-            />
-          );
-        }
-      })}
+      <div className="articles">
+        {articles.map(article => {
+          if (article.subtype == 7) {
+            console.log(article.promo_items.subtitle);
+            return (
+              <a href={`${article.website_url}`}>
+                <SingleArticle
+                  key={article.id}
+                  img={article.promo_items.basic.url}
+                  headline={article.headlines.basic}
+                  subtitle={article.promo_items.basic.subtitle}
+                />
+              </a>
+            );
+          }
+        })}
+      </div>
     </div>
   );
 }
