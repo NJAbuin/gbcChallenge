@@ -8,7 +8,6 @@ export default function Articles({ articles }) {
       <div className="articles">
         {articles.map(article => {
           if (article.subtype == 7) {
-            console.log(article.promo_items.subtitle);
             return (
               <a href={`${article.website_url}`}>
                 <SingleArticle

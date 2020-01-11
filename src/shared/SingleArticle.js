@@ -6,7 +6,8 @@ export default function SingleArticle({ img, key, headline, subtitle }) {
       <img className="articleImg" src={img} alt="img" />
 
       <p>
-        {headline} {subtitle}
+        {headline}
+        {subtitle}
       </p>
     </div>
   );
