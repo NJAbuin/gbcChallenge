@@ -5,12 +5,12 @@ import SideAds from "./SideAds";
 import Articles from "./Articles";
 import Footer from "./Footer";
 
-const MainGrid = () => {
+const MainGrid = ({ articles }) => {
   return (
     <div className="grid-container">
       <Header />
       <TopAds />
-      <Articles />
+      <Articles articles={articles} />
       <SideAds />
       <Footer />
     </div>

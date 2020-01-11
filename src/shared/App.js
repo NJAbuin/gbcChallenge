@@ -5,8 +5,7 @@ import "./App.css";
 const App = ({ articles }) => {
   return (
     <div className="App">
-      {console.log(articles)}
-      <MainGrid />
+      <MainGrid articles={articles} />
     </div>
   );
 };

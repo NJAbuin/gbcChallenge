@@ -47,12 +47,25 @@
   background-color: cadetblue;
   grid-area: sideAds;
   margin-right: 20%;
+  width: 100%;
 }
 
 .articles {
   background-color: chocolate;
   grid-area: articles;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin-left: 20%;
+}
+
+.article {
+  display: inline-block;
+}
+
+.articleImg {
+  width: 270px;
+  height: 170px;
+  object-fit: cover;
 }
 
 .footer {

@@ -15,18 +15,22 @@ app.get("*", (req, res) => {
   axios
     .get("https://api-test-ln.herokuapp.com/articles")
     .then(res => res.data)
-    .then(articles => {
+    .then(articlesObj => {
       res.send(`
         <!DOCTYPE html>
         <head>
-          <title>Universal Reacl</title>
+          <title>Acumulado</title>
           <link rel="stylesheet" href="/css/main.css">
-          <script>window.__ARTICLES__=${JSON.stringify(articles)}</script>
+          <script>window.__ARTICLES__=${JSON.stringify(
+            articlesObj.articles
+          )}</script>
           <script src="/bundle.js" defer></script>
         </head>
   
         <body>
-          <div id="root">${renderToString(<App articles={articles} />)}</div>
+          <div id="root">${renderToString(
+            <App articles={articlesObj.articles} />
+          )}</div>
         </body>
       </html>
     `);
