@@ -21,6 +21,7 @@ app.get("*", (req, res) => {
         <head>
           <title>Acumulado</title>
           <link rel="stylesheet" href="/css/main.css">
+          <link rel="shortcut icon" href="./media/favicon.ico" />
           <script>window.__ARTICLES__=${JSON.stringify(
             articlesObj.articles
           )}</script>
