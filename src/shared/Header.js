@@ -9,7 +9,9 @@ export default function Header() {
         name="search"
         defaultValue="Buscar..."
       />
+
       <img className="logo" src="./media/LaNacionLogo.jpg" />
+
       <button className="suscribeBtn">SUSCRIBITE</button>
       <button className="ingresarBtn">INGRESAR</button>
     </div>
