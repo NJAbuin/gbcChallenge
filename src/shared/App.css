@@ -71,6 +71,11 @@ button:hover {
   grid-area: logo;
 }
 
+.logo:hover {
+  opacity: 85%;
+  cursor: pointer;
+}
+
 .topBanner {
   grid-area: topBanner;
   height: 8.5rem;
