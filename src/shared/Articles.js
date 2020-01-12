@@ -36,6 +36,7 @@ export default function Articles({ articles }) {
           }
         })}
       </div>
+      <button className="masNotasBtn">MAS NOTAS DE ACUMULADO GRILLA</button>
     </div>
   );
 }
