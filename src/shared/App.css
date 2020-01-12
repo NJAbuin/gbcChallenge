@@ -113,6 +113,15 @@ button:hover {
   width: 86%;
 }
 
+.tags {
+  margin-left: 7.8%;
+}
+
+.tag {
+  text-decoration: none;
+  color: #0073c4;
+}
+
 .article {
   display: inline-block;
 }
