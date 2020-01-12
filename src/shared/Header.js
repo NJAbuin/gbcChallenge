@@ -7,7 +7,7 @@ export default function Header() {
         className="searchBar"
         type="text"
         name="search"
-        value="Buscar..."
+        defaultValue="Buscar..."
       />
       <img className="logo" src="./media/LaNacionLogo.jpg" />
       <button className="suscribeBtn">SUSCRIBITE</button>
