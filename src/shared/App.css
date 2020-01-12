@@ -26,6 +26,14 @@ button:hover {
   justify-content: center;
 }
 
+.searchBar {
+  height: 30px;
+  width: 190px;
+  background: url("../../public/media/searchIcon.png") top left no-repeat;
+  background-size: 30px 30px;
+  background-position-x: right;
+}
+
 .suscribeBtn {
   background-color: yellow;
   font-weight: bold;
@@ -58,7 +66,6 @@ button:hover {
   display: block;
   width: 353px;
   height: 50px;
-  align-self: center;
   margin-left: 29%;
   margin-right: auto;
   grid-area: logo;

@@ -11,7 +11,6 @@ export default function SingleArticle({ img, key, headline, subtitle, date }) {
         {subtitle}
         <br />
         <font size="2" className="articleDate">
-          {" "}
           {UTCtoSpanishDateParser(date)}
         </font>
       </p>
