@@ -7,8 +7,8 @@ h3 {
   grid-row-gap: 1.4rem;
   grid-template-areas:
     "header header header header"
-    "topAds topAds topAds topAds"
-    "articles articles articles sideAds"
+    "topBanner topBanner topBanner topBanner"
+    "articles articles articles sideBar"
     "footer footer footer footer";
 }
 
@@ -32,40 +32,39 @@ h3 {
 
 .logo {
   display: block;
-  max-width: 240px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
+  width: 353px;
+  height: 50px;
   align-self: center;
-  margin-left: 43%;
+  margin-left: 29%;
   margin-right: auto;
   grid-area: logo;
 }
 
-.topAds {
-  grid-area: topAds;
+.topBanner {
+  grid-area: topBanner;
   height: 8.5rem;
 }
 
 .topAdGrayBox {
   background-color: #f3f3f3;
   display: inline-block;
-  width: 15%;
+  width: 6%;
   height: 100%;
 }
 
 .topAdBox {
   background-color: #a0dbe9;
   display: inline-block;
-  width: 70%;
+  width: 88%;
   height: 100%;
 }
 
-.sideAds {
-  grid-area: sideAds;
+.sideBar {
+  grid-area: sideBar;
   background-color: #a0dbe9;
-  width: 100%;
+  width: 78%;
   height: 100%;
+  margin-right: 20rem;
 }
 
 .articles {
@@ -74,8 +73,8 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 1em;
-  margin-left: 16%;
-  max-width: 60%;
+  margin-left: 8%;
+  width: 86%;
 }
 
 .article {
@@ -83,7 +82,7 @@ h3 {
 }
 
 .articleTitle {
-  margin-left: 16%;
+  margin-left: 8%;
 }
 
 .articleImg {
