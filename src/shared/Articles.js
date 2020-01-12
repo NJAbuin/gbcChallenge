@@ -4,7 +4,7 @@ import SingleArticle from "./SingleArticle";
 export default function Articles({ articles }) {
   return (
     <div>
-      <h2 className="articleTitle">Acumulado Grilla</h2>
+      <h1 className="articleTitle">Acumulado Grilla</h1>
       <div className="articles">
         {articles.map(article => {
           if (article.subtype == 7) {
@@ -15,6 +15,7 @@ export default function Articles({ articles }) {
                   img={article.promo_items.basic.url}
                   headline={article.headlines.basic}
                   subtitle={article.promo_items.basic.subtitle}
+                  date={article.display_date}
                 />
               </a>
             );

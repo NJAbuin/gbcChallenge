@@ -68,7 +68,6 @@ h3 {
 }
 
 .articles {
-  background-color: chocolate;
   grid-area: articles;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -83,6 +82,18 @@ h3 {
 
 .articleTitle {
   margin-left: 8%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
+.articleText {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.5px;
+}
+
+.articleDate {
+  color: #5a5a5a;
 }
 
 .articleImg {
