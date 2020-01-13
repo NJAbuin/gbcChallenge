@@ -11,20 +11,17 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("public"));
 app.use(morgan("tiny"));
 
-app.get("*", (req, res) => {
-  axios
-    .get("https://api-test-ln.herokuapp.com/articles")
-    .then(res => res.data)
-    .then(articlesObj => {
-      res.send(`
+app.get("*", async (req, res) => {
+  const response = await axios.get(
+    "https://api-test-ln.herokuapp.com/articles"
+  );
+  const articlesObj = response.data;
+  res.send(`
         <!DOCTYPE html>
         <head>
           <title>Acumulado</title>
           <link rel="stylesheet" href="/css/main.css">
           <link rel="shortcut icon" href="./media/favicon.ico" />
-          <script>window.__ARTICLES__=${JSON.stringify(
-            articlesObj.articles
-          )}</script>
           <script src="/bundle.js" defer></script>
         </head>
   
@@ -35,7 +32,6 @@ app.get("*", (req, res) => {
         </body>
       </html>
     `);
-    });
 });
 
 app.listen(PORT, () => {
