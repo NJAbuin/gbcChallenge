@@ -1,5 +1,11 @@
+/*Globals*/
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a:hover {
+  opacity: 80%;
 }
 
 button {
@@ -19,6 +25,8 @@ button:hover {
     "articles articles articles sideBar"
     "footer footer footer footer";
 }
+
+/* Header */
 
 .header {
   grid-area: header;
@@ -78,6 +86,8 @@ button:hover {
   cursor: pointer;
 }
 
+/* Top Ads Banner */
+
 .topBanner {
   grid-area: topBanner;
   height: 8.5rem;
@@ -97,14 +107,18 @@ button:hover {
   height: 100%;
 }
 
+/* SideAds Banner */
+
 .sideBar {
   grid-area: sideBar;
   background-color: #a0dbe9;
-  width: 80%;
+  width: 75%;
   height: 100%;
-  margin-right: 26rem;
+  margin-right: 22rem;
   margin-top: 1.6rem;
 }
+
+/* Articles */
 
 .articles {
   grid-area: articles;
@@ -164,7 +178,52 @@ button:hover {
   color: white;
 }
 
+/* Footer */
+
 .footer {
-  background-color: cornflowerblue;
   grid-area: footer;
+  margin-left: 6%;
+  margin-top: 3%;
+  width: 87.8%;
+}
+
+.socialIcon {
+  height: 30px;
+  width: 30px;
+  padding: 1.5%;
+}
+
+.footerLogo {
+  width: 230px;
+  height: 35px;
+  padding: 1.5%;
+  justify-self: center;
+  margin-left: 15rem;
+}
+
+.playStoreIcon {
+  width: 115px;
+  height: 30px;
+  padding: 1.5%;
+  margin-left: 12rem;
+}
+
+.appStoreIcon {
+  width: 115px;
+  height: 30px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-left: 0.5rem;
+}
+
+.leftFooterText {
+  font-size: 14px;
+  text-align: left;
+  display: inline-block;
+}
+
+.rightFooterText {
+  font-size: 14px;
+  margin-left: 23%;
+  display: inline-block;
 }
