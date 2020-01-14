@@ -15,7 +15,7 @@ app.get("*", async (req, res) => {
   const response = await axios.get(
     "https://api-test-ln.herokuapp.com/articles"
   );
-  const articlesObj = response.data;
+  const articlesObj = await response.data;
   res.send(`
         <!DOCTYPE html>
         <head>
