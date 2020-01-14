@@ -27,8 +27,11 @@ export default function Footer() {
       <br />
       <hr />
       <p className="leftFooterText">
-        Mapa del sitio &nbsp; Ayuda &nbsp; Términos y condiciones &nbsp; ¿Cómo
-        anunciar? &nbsp; Suscribirse al diario impreso
+        <a href="http://especiales.lanacion.com.ar/varios/mapa-sitio/index.html">
+          Mapa del sitio
+        </a>{" "}
+        &nbsp; Ayuda &nbsp; Términos y condiciones &nbsp; ¿Cómo anunciar? &nbsp;
+        Suscribirse al diario impreso
       </p>
       &nbsp;
       <p className="rightFooterText">
