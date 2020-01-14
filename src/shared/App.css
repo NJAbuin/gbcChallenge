@@ -140,6 +140,7 @@ button:hover {
 
 .article {
   display: inline-block;
+  max-width: 270px;
 }
 
 .articleTitle {
