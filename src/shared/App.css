@@ -228,3 +228,8 @@ button:hover {
   margin-left: 23%;
   display: inline-block;
 }
+
+.footerLink {
+  text-decoration: none;
+  color: #0073c4;
+}
