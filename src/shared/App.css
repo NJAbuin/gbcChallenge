@@ -37,7 +37,7 @@ button:hover {
 .searchBar {
   height: 30px;
   width: 190px;
-  /* background: url("../../public/media/searchIcon.png") top left no-repeat; */
+  background: url("../../public/media/searchIcon.png") top left no-repeat;
   background-size: 30px 30px;
   background-position-x: right;
   align-self: center;
