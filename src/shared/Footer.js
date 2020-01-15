@@ -29,9 +29,19 @@ export default function Footer() {
       <p className="leftFooterText">
         <a href="http://especiales.lanacion.com.ar/varios/mapa-sitio/index.html">
           Mapa del sitio
-        </a>{" "}
-        &nbsp; Ayuda &nbsp; Términos y condiciones &nbsp; ¿Cómo anunciar? &nbsp;
-        Suscribirse al diario impreso
+        </a>
+        &nbsp; &nbsp;
+        <a href="https://micuenta.lanacion.com.ar/ayuda">Ayuda</a>
+        &nbsp; &nbsp;
+        <a href="https://micuenta.lanacion.com.ar/tyc">
+          Términos y condiciones
+        </a>
+        &nbsp; &nbsp;
+        <a href="https://www.lanacion.in/#/">¿Cómo anunciar?</a>
+        &nbsp; &nbsp;
+        <a href="https://suscripciones.lanacion.com.ar/suscribirme/">
+          Suscribirse al diario impreso
+        </a>
       </p>
       &nbsp;
       <p className="rightFooterText">
